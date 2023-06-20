@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" type="text/css" href="frontend-hello.css">
+    </head>
+<body onload="mostrarFechaHora();">
+
+<h1>Hello</h1>
+<h2>--------------</h2>
+
+<p id="demo"></p>
+
+<h2>--------------</h2>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('user');
+        document.getElementById("demo").innerHTML = "Hola amigo " + myParam;
+
+        function mostrarFechaHora() {
+			var fechaHora = new Date();
+			var fecha = fechaHora.toLocaleDateString();
+			var hora = fechaHora.toLocaleTimeString();
+			document.getElementById("fechaHora").innerHTML = "Date: " + fecha + ", hour: " + hora;
+		}
+    </script>
+<div id="fechaHora"></div>
+
+</body>
+</html>

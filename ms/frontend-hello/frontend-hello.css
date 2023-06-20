@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(78, 78, 78, 0.781);
+    color: rgba(0, 0, 0, 0.274);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: rgb(70, 70, 218);
+  }
+  
+  p {
+    color: rgb(247, 248, 247);
+  }
